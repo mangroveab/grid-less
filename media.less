@@ -9,3 +9,30 @@
 @tablet-landscape: 	~'only screen and (min-width : 980px)';
 @desktop-small: 	~'only screen and (min-width : 1025px)';
 @desktop: 			~'only screen and (min-width : 1140px)';
+
+.visible-on-mobile-landscape 		{display: none;}
+.visible-on-tablet-portrait 		{display: none;}
+.visible-on-tablet-landscape 		{display: none;}
+.visible-on-desktop-small 			{display: none;}
+.visible-on-desktop 				{display: none;}
+
+@media @mobile-landscape {
+	.visible-on-mobile-landscape 	{display: inherit;}
+	.invisible-on-mobile-landscape 	{display: none;}
+}
+@media @tablet-portrait {
+	.visible-on-tablet-portrait 	{display: inherit;}
+	.invisible-on-tablet-portrait 	{display: none;}
+}
+@media @tablet-landscape {
+	.visible-on-tablet-landscape 	{display: inherit;}
+	.invisible-on-tablet-landscape 	{display: none;}
+}
+@media @desktop-small {
+	.visible-on-desktop-small 		{display: inherit;}
+	.invisible-on-desktop-small 	{display: none;}
+}
+@media @desktop {
+	.visible-on-desktop 			{display: inherit;}
+	.invisible-on-desktop 			{display: none;}
+}
